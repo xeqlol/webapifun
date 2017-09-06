@@ -15,7 +15,7 @@ namespace Scheduler.API
         public static void Main(string[] args)
         {
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<StartupThatShit>() // REFLECTIOOOOOOOOOOOOOOOOOOONS
+                .UseStartup<Startup>() // REFLECTIOOOOOOOOOOOOOOOOOOONS
                 .Build()
                 .Run();
         }

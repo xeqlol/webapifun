@@ -20,7 +20,7 @@ namespace Scheduler.Data.Abstract
         void Add(T entity);
         void Update(T entity);
         void Delete(T entity);
-        void DeleteWhere(T entity, Expression<Func<T, bool>> predicate);
+        void DeleteWhere(Expression<Func<T, bool>> predicate);
         void Commit();
     }
 }
