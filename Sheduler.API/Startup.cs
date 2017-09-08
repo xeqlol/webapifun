@@ -33,10 +33,10 @@ namespace Scheduler.API
                 .AddJsonFile("appsettings.json")
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
 
-            if(env.IsDevelopment())
+            /*if(env.IsDevelopment())
             {
                 builder.AddUserSecrets<Startup>();
-            }
+            }*/
 
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
